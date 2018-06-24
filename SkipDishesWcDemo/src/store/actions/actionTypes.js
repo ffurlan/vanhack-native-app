@@ -1,0 +1,11 @@
+export const TRY_AUTH = 'TRY_AUTH';
+export const AUTH_SET_DATA = "AUTH_SET_DATA";
+export const AUTH_REMOVE_DATA = 'AUTH_REMOVE_DATA';
+
+export const UI_START_LOADING = 'UI_START_LOADING';
+export const UI_STOP_LOADING = 'UI_STOP_LOADING';
+
+export const SET_RESTAURANTS = 'SET_RESTAURANTS';
+
+
+

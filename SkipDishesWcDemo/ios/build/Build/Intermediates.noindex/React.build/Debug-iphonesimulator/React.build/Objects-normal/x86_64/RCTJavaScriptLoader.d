@@ -1,0 +1,26 @@
+dependencies: \
+  /Users/ffurlan/Projects/vanhack/skip-wc-app/SkipDishesWcDemo/node_modules/react-native/React/Base/RCTJavaScriptLoader.mm \
+  /Users/ffurlan/Projects/vanhack/skip-wc-app/SkipDishesWcDemo/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/ffurlan/Projects/vanhack/skip-wc-app/SkipDishesWcDemo/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/ffurlan/Projects/vanhack/skip-wc-app/SkipDishesWcDemo/ios/build/Build/Products/Debug-iphonesimulator/include/cxxreact/JSBundleType.h \
+  /Users/ffurlan/Projects/vanhack/skip-wc-app/SkipDishesWcDemo/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
+  /Users/ffurlan/Projects/vanhack/skip-wc-app/SkipDishesWcDemo/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h \
+  /Users/ffurlan/Projects/vanhack/skip-wc-app/SkipDishesWcDemo/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/ffurlan/Projects/vanhack/skip-wc-app/SkipDishesWcDemo/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/ffurlan/Projects/vanhack/skip-wc-app/SkipDishesWcDemo/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/ffurlan/Projects/vanhack/skip-wc-app/SkipDishesWcDemo/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/ffurlan/Projects/vanhack/skip-wc-app/SkipDishesWcDemo/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/ffurlan/Projects/vanhack/skip-wc-app/SkipDishesWcDemo/node_modules/react-native/React/Base/RCTConvert.h \
+  /Users/ffurlan/Projects/vanhack/skip-wc-app/SkipDishesWcDemo/node_modules/react-native/React/Views/RCTAnimationType.h \
+  /Users/ffurlan/Projects/vanhack/skip-wc-app/SkipDishesWcDemo/node_modules/react-native/React/Views/RCTBorderStyle.h \
+  /Users/ffurlan/Projects/vanhack/skip-wc-app/SkipDishesWcDemo/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/ffurlan/Projects/vanhack/skip-wc-app/SkipDishesWcDemo/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/ffurlan/Projects/vanhack/skip-wc-app/SkipDishesWcDemo/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/ffurlan/Projects/vanhack/skip-wc-app/SkipDishesWcDemo/node_modules/react-native/React/Views/RCTPointerEvents.h \
+  /Users/ffurlan/Projects/vanhack/skip-wc-app/SkipDishesWcDemo/node_modules/react-native/React/Views/RCTTextDecorationLineType.h \
+  /Users/ffurlan/Projects/vanhack/skip-wc-app/SkipDishesWcDemo/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/ffurlan/Projects/vanhack/skip-wc-app/SkipDishesWcDemo/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/ffurlan/Projects/vanhack/skip-wc-app/SkipDishesWcDemo/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/ffurlan/Projects/vanhack/skip-wc-app/SkipDishesWcDemo/node_modules/react-native/React/Base/RCTMultipartDataTask.h \
+  /Users/ffurlan/Projects/vanhack/skip-wc-app/SkipDishesWcDemo/node_modules/react-native/React/Base/RCTMultipartStreamReader.h \
+  /Users/ffurlan/Projects/vanhack/skip-wc-app/SkipDishesWcDemo/node_modules/react-native/React/Base/RCTPerformanceLogger.h
