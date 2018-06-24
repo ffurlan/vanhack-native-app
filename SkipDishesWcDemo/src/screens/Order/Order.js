@@ -2,11 +2,17 @@ import React, { Component } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Animated, ActivityIndicator, TextInput } from 'react-native';
 import { connect } from 'react-redux';
 import Icon from 'react-native-vector-icons/Ionicons';
+import _ from 'lodash';
+
+import DishesList from '../../components/DishesList/DishesList';
+
+import { addDishToCart } from '../../store/actions/index';
 
 
 class Order extends Component{
     state = {
-        searchTerm: ''
+        searchTerm: '',
+        selectedDishes: []
     }
     
     static navigatorStyle = {
@@ -21,8 +27,7 @@ class Order extends Component{
     onNavigatorEvent = event => {
         if (event.type === "ScreenChangedEvent"){
             if (event.id === "willAppear"){
-                //this.props.onResetContactInformation();
-                //this.props.onLoadContacts(this.props.selectedCompany.id);
+                
             }
         }
         if (event.type === "NavBarButtonPress"){
@@ -36,37 +41,22 @@ class Order extends Component{
 
     itemSelectedHandler = key => {
 
-        const selContact = this.props.contacts.find(contact => {
-            return contact.key === key;
+        const selDish = this.props.selectedRestaurant.dishes.find(dish => {
+            return dish.key === key;
         });
 
-        this.props.navigator.push({
-            screen: "skipDemo.ContactProfile",
-            title: selContact.name,
-            passProps:{
-                selectedContact: selContact.item
-            }
-        });
+        this.props.onAddDish(selDish)
     }
 
     placesSearchHandler = () => {
     }
 
     render(){
+        let dishes = _.difference(this.props.selectedRestaurant.dishes, this.props.selectedDishes);
 
         return (
             <View style={styles.container}>
-              <View style={styles.searchSection}>
-                  <Icon style={styles.searchIcon} name="ios-search" color="#fff"  size={20} />
-                  <TextInput
-                    value={this.state.searchTerm}
-                    onChangeText={val => this.setState({ searchTerm: val })}
-                    placeholder="Search contacts"
-                    placeholderTextColor="#fff"
-                    style={styles.input}
-                  />
-              </View>
-                
+                <DishesList dishes={dishes} onItemSelected={this.itemSelectedHandler} />
             </View>
         );
     }
@@ -96,11 +86,14 @@ const styles = StyleSheet.create({
 
 const mapStateToProps = state => {
     return {
+        selectedRestaurant: state.restaurants.currentRestaurant,
+        selectedDishes: state.restaurants.selectedDishes
     };
 }
 
 const mapDispatchToProps = dispatch => {
     return {
+        onAddDish: (dish) => dispatch(addDishToCart(dish))
     }
 }
 

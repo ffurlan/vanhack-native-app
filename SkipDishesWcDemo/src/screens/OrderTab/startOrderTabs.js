@@ -4,9 +4,8 @@ import Icon from 'react-native-vector-icons/Ionicons';
 
 const startOrderTabs = () => {
     Promise.all([ 
-        Icon.getImageSource(Platform.OS === "ios" ? "ios-people" : "md-people", 30),
-        Icon.getImageSource(Platform.OS === "ios" ?  "ios-browsers-outline" : "md-browsers", 30),
-        Icon.getImageSource(Platform.OS === "ios" ?  "ios-person-add-outline": "md-person-add", 30),
+        Icon.getImageSource(Platform.OS === "ios" ? "ios-restaurant" : "md-restaurant", 30),
+        Icon.getImageSource(Platform.OS === "ios" ?  "ios-cart" : "md-cart", 30),
         Icon.getImageSource(Platform.OS === "ios" ?  "ios-menu": "md-menu", 30)
     ]).then(sources => {
         Navigation.startTabBasedApp({      
@@ -19,7 +18,7 @@ const startOrderTabs = () => {
                     navigatorButtons:{
                         leftButtons:[
                             {
-                                icon: sources[3],
+                                icon: sources[2],
                                 title: "Menu",
                                 id: "sideDrawerToggle"
                             }
@@ -32,14 +31,14 @@ const startOrderTabs = () => {
                     }
                 },
                 {
-                    screen: 'skipDemo.Chart',
-                    label: 'My Chart',
-                    title: 'My Chart',
+                    screen: 'skipDemo.Cart',
+                    label: 'My Cart',
+                    title: 'My Cart',
                     icon: sources[1],
                     navigatorButtons:{
                         leftButtons:[
                             {
-                                icon: sources[3],
+                                icon: sources[2],
                                 title: "Menu",
                                 id: "sideDrawerToggle"
                             }

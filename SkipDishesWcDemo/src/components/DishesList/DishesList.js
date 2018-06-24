@@ -1,19 +1,19 @@
 import React from 'react';
 import { FlatList, StyleSheet } from 'react-native';
-import ListItem from '../ListItem/ListItem';
-import placeholderCompanyLogo from '../../assets/placeholder-company-logo.png';
+import DishListItem from '../ListItem/DishListItem';
 
 
-const restaurantList = props => {
+const dishesList = props => {
 
     return (
         <FlatList 
             style={styles.listContainer}
-            data={props.restaurants}
+            data={props.dishes}
             renderItem={(info) => (
-                <ListItem 
-                    name={info.item.display_name}
-                    image={info.item.logo}
+                <DishListItem 
+                    name={info.item.description}
+                    value={info.item.value}
+                    image={null}
                     onItemPressed={() => props.onItemSelected(info.item.key)} 
                 />
             )}
@@ -28,4 +28,4 @@ const styles = StyleSheet.create({
     }
   });
 
-export default restaurantList;
+export default dishesList;

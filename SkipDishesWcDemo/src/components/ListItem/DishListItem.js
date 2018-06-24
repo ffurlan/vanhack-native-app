@@ -1,11 +1,11 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 
-const listItem = (props) => (
+const dishListItem = (props) => (
     <TouchableOpacity onPress={props.onItemPressed}>
         <View style={styles.listItem}>
-            <Image source={{uri:props.image}} style={styles.image} />
-            <Text style={{color: "#fff"}}>{props.name}</Text>
+            <Image source={props.image} style={styles.image} />
+            <Text style={{color: "#fff"}}>{`${props.name} -- $${props.value}`}</Text>
         </View>
     </TouchableOpacity>
 );
@@ -21,9 +21,9 @@ const styles = StyleSheet.create({
     },
     image:{
         marginRight: 8,
-        height: 40,
-        width: 40
+        height: 20,
+        width: 20
     },
 })
 
-export default listItem;
+export default dishListItem;

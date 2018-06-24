@@ -6,6 +6,8 @@ export const UI_START_LOADING = 'UI_START_LOADING';
 export const UI_STOP_LOADING = 'UI_STOP_LOADING';
 
 export const SET_RESTAURANTS = 'SET_RESTAURANTS';
+export const SET_RESTAURANT = 'SET_RESTAURANT';
+export const ADD_DISH_TO_CART = 'ADD_DISH_TO_CART';
 
 
 

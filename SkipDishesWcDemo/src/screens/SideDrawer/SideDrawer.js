@@ -3,7 +3,7 @@ import { View, Text, Dimensions, StyleSheet, TouchableOpacity, Platform, Image }
 import { connect } from 'react-redux';
 
 import Icon from 'react-native-vector-icons/Ionicons';
-import { authLogout } from '../../store/actions/index';
+import { authLogout, redirectToRestaurants } from '../../store/actions/index';
 
 import logo from '../../assets/logo.png';
 
@@ -19,15 +19,15 @@ class SideDrawer extends Component {
                 <View style={{marginLeft: 8}}>
                     <Image source={logo} style={styles.image} />
                 </View>
-                <TouchableOpacity onPress={() => this.props.onOpenPublicBase()}>
+                <TouchableOpacity onPress={() => this.props.onRedirectToRestaurant()}>
                     <View style={styles.drawerItem}>
-                        <Icon name={Platform.OS === "ios" ? "ios-folder-open-outline" : "md-folder-open"} size={30} color="#fff" style={styles.drawerItemIcon} />
+                        <Icon name={Platform.OS === "ios" ? "ios-restaurant-outline" : "md-restaurant"} size={30} color="#fff" style={styles.drawerItemIcon} />
                         <Text style={styles.textIconStyle}>Restaurants</Text>
                     </View>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={() => this.props.onOpenHolders()}>
                     <View style={styles.drawerItem}>
-                        <Icon name={Platform.OS === "ios" ? "ios-folder-open-outline" : "md-folder-open"} size={30} color="#fff" style={styles.drawerItemIcon} />
+                        <Icon name={Platform.OS === "ios" ? "ios-reorder-outline" : "md-freorder"} size={30} color="#fff" style={styles.drawerItemIcon} />
                         <Text style={styles.textIconStyle}>My Orders</Text>
                     </View>
                 </TouchableOpacity>
@@ -71,6 +71,7 @@ const styles = StyleSheet.create({
 const mapDispatchToProps = dispatch => {
     return {
         onLogout: () => dispatch(authLogout()),
+        onRedirectToRestaurant: () => dispatch(redirectToRestaurants())
     }
 }
 

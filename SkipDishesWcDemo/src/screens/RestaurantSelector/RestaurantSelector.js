@@ -35,7 +35,7 @@ class RestaurantSelector extends Component{
         const selRest = this.props.restaurants.find(rest => {
             return rest.key === key;
         });
-        this.props.onSelectRestaurant(selRest.item);
+        this.props.onSelectRestaurant(selRest);
     }
 
     placesSearchHandler = () => {
